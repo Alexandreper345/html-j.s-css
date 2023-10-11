@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> QUAL A SUA NACIONALIDADE </title>
+</head>
+<body>
+    <h1> VERIFICADOR DE NACIONALIDADE </h1>
+    NACIO: <input type="text" name="txtx" id = "txtx">
+    <input type="button" value="verificar"  onclick = 'verificador()'>
+    <div id ='ver'>
+    
+    <script>
+
+        function verificador(){
+            var txt = window.document.querySelector("input#txtx")
+            var ver = window.document.querySelector('div#ver')
+            var val = (txt.value)
+            ver.innerHTML = `<p> você é de ${val} <p>`
+            
+            if (val == 'Brasil'){
+                ver.innerHTML += 'você é Brasileiro'
+
+            } else {
+                ver.innerHTML += 'você é Estrangeiro'
+            }
+            
+
+        }
+    </script>
+    
+</body>
+</html>
